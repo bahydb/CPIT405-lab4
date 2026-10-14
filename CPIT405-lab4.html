@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Auto Parts - Order Form</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .form-container {
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 4px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 12px;
+            margin-top: 4px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Great Auto Parts - Order Form</h1>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="make">Make:</label>
+            <input type="text" id="make" name="make" placeholder="Make" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" placeholder="Model" required>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="Year" min="1900" max="2026" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="spare-part">Spare Part:</label>
+            <input type="text" id="spare-part" name="spare_part" placeholder="Enter the spare part you need" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter the quantity of the spare part you need" min="1" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="9" placeholder="Enter your comment"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
